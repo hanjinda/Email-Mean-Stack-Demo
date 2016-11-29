@@ -1,2 +1,4 @@
 
 backend/config/secrets.js
+
+backend/config/secrets_sample.js

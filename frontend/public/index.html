@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <title>Webmonkeys MEAN Stack</title>
+    <title>Email MEAN Stack Demo</title>
 
     <!-- Stylesheets -->
     <link rel="stylesheet" href="./css/styles.css">
@@ -16,11 +16,18 @@
 
     <div ng-controller="MainController">
         <ul>
-            <li ng-repeat="t in tasks">{{ t.name }}</li>
+            <li ng-repeat="t in tasks">
+                Title: {{ t.title }} <br> 
+                Time: {{ t.time }} <br> 
+                Content: {{ t.content }}
+            </li>  <!-- Title -->
+            
         </ul>
         <form>
-            <input ng-model="newTask"/>
-            <input type="submit" ng-click="postTask()" />
+            Title: <input ng-model="newTask"/> <br>
+            Time: <input ng-model="newTask2"/> <br>
+            Content: <input ng-model="newTask3"/> <br>
+            <input type="submit" ng-click="postTask()" value="add"/>
         </form>
     </div>
 

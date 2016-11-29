@@ -16,7 +16,9 @@ module.exports = function (app, router) {
 
     app.post('/api/tasks', function(req, res) {
         Task.create({
-            name : req.body.name,
+            title : req.body.title,
+            time: req.body.time,
+            content: req.body.content,
         }, function(err, todo) {
             if (err)
                 res.send(err);
