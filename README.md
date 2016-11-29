@@ -1,2 +1,2 @@
-# Email-Mean-Stack-Demo
-Email-Mean-Stack-Demo
+# mean-stack-starter
+https://mlab.com/
