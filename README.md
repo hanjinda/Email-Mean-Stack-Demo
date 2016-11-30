@@ -8,6 +8,7 @@
 - cd frontend/
 - npm install
 - node app.js
+
 2.back-end
 - cd backend/
 - npm install
