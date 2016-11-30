@@ -18,6 +18,7 @@
         <ul>
             <li ng-repeat="t in tasks">
                 [User ID] {{ t.userid }} <br> 
+                [Message ID] {{ t.messageid }} <br> 
                 [Title] {{ t.title }} <br> 
                 [Time] {{ t.time }} <br> 
                 [Content] {{ t.content }} 
@@ -26,6 +27,7 @@
         </ul>
         <form>
             User ID: <input ng-model="newTask0"/> <br>
+            Message ID: <input ng-model="newTask1"/> <br>
             Title: <input ng-model="newTask"/> <br>
             Time: <input ng-model="newTask2"/> <br>
             Content: <input ng-model="newTask3"/> <br>

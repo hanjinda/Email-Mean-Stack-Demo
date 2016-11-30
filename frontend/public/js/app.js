@@ -10,12 +10,13 @@ app.controller('MainController', function ($scope, $http) {
          });
 
     $scope.postTask = function() {
-        $http.post('http://localhost:4000/api/tasks', {'userid': $scope.newTask0, 'title': $scope.newTask, 'time': $scope.newTask2, 'content': $scope.newTask3})
+        $http.post('http://localhost:4000/api/tasks', {'userid': $scope.newTask0, 'messageid': $scope.newTask1, 'title': $scope.newTask, 'time': $scope.newTask2, 'content': $scope.newTask3})
             .success(function(data) {
-                $scope.newTask0 = ''; // clear the form so our user is ready to enter another
-                $scope.newTask = ''; // clear the form so our user is ready to enter another
-                $scope.newTask2 = ''; // clear the form so our user is ready to enter another
-                $scope.newTask3 = ''; // clear the form so our user is ready to enter another                
+                $scope.newTask0 = ''; // userid - clear the form so our user is ready to enter another
+                $scope.newTask1 = ''; // messageid - clear the form so our user is ready to enter another
+                $scope.newTask = ''; // title - clear the form so our user is ready to enter another
+                $scope.newTask2 = ''; // time - clear the form so our user is ready to enter another
+                $scope.newTask3 = ''; // content - clear the form so our user is ready to enter another                
                 $scope.tasks = data;
             })
             .error(function(err) {
