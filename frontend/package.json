@@ -1,8 +1,9 @@
 {
-  "name": "webmonkeys-mean-stack-frontend",
+  "name": "email-mean-stack-frontend",
   "version": "1.0.0",
   "authors": [
-    "sskhandek <sskhandek@gmail.com>"
+  	 	"jhan51 <jhan51@illinois.edu>",
+    	"sskhandek <sskhandek@gmail.com>"
   ],
   "dependencies": {
     "express": "^4.11.1"
