@@ -13,18 +13,9 @@
 </head>
 
 <body ng-app="taskApp">
+    <h1> Email MEAN Stack Demo </h1>
 
     <div ng-controller="MainController">
-        <ul>
-            <li ng-repeat="t in tasks">
-                [User ID] {{ t.userid }} <br> 
-                [Message ID] {{ t.messageid }} <br> 
-                [Title] {{ t.title }} <br> 
-                [Time] {{ t.time }} <br> 
-                [Content] {{ t.content }} 
-            </li>  <!-- Title -->
-            
-        </ul>
         <form>
             User ID: <input ng-model="newTask0"/> <br>
             Message ID: <input ng-model="newTask1"/> <br>
@@ -33,6 +24,15 @@
             Content: <input ng-model="newTask3"/> <br>
             <input type="submit" ng-click="postTask()" value="add"/>
         </form>
+        <ul>
+            <li ng-repeat="t in tasks | orderBy:$index:true"> <!-- orderBy:$index:true (reverse) -->
+                <font color="red">[User ID]</font> {{ t.userid }} <br> 
+                <font color="red">[Message ID]</font> {{ t.messageid }} <br> 
+                <font color="red">[Title]</font> {{ t.title }} <br> 
+                <font color="red">[Time]</font> {{ t.time }} <br> 
+                <font color="red">[Content]</font> {{ t.content }} 
+            </li>  <!-- Title -->
+        </ul>
     </div>
 
     <!-- Scripts -->

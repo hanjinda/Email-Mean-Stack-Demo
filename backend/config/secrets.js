@@ -3,5 +3,5 @@
  */
 
 module.exports = {
-    url : ""
+    url : "mongodb://imskyhan:imskyhan@ds113608.mlab.com:13608/imskyhan"
 };
