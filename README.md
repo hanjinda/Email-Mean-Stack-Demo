@@ -1,4 +1,4 @@
-# mean stack starter web demo
+# MEAN Stack Web Demo Framework
 
 ## mongodb (500MB free)
 - https://mlab.com/
@@ -17,3 +17,6 @@
 
 ## Web View
 - localhost:3000 (number you put in frontend/app.js)
+
+## Acknowledge
+- Thanks for Sujay's Initial Example
