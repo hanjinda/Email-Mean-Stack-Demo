@@ -1,6 +1,4 @@
-
+backend/config/secrets_sample.js
 backend/config/secrets.js
 backend/node_modules/
-backend/config/secrets_sample.js
 frontend/node_modules/
-backend/config/secrets_sample.js
